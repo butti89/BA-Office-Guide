@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import { Button } from 'react-native-elements';
 
 export default class BAOfficeGuide extends Component {
   render() {
@@ -26,6 +27,13 @@ export default class BAOfficeGuide extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Button
+            raised
+            icon={{name: 'home', size: 32}}
+            buttonStyle={{backgroundColor: 'red', borderRadius: 10}}
+            textStyle={{textAlign: 'center'}}
+            title={`Welcome to\nReact Native Elements`}
+        />
       </View>
     );
   }
